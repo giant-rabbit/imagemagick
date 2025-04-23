@@ -533,6 +533,13 @@ function _imagemagick_convert_exec($command_args, &$output = NULL, &$error = NUL
 }
 
 /**
+ * Imlements image_hook_supported_extensions
+ */
+function image_imagemagick_supported_extensions() {
+  return ['png', 'gif', 'jpg', 'jpeg', 'webp'];
+}
+
+/**
  * @} End of "ingroup image".
  */
 
